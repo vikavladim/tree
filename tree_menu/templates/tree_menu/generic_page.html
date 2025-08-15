@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load menu_tags %}
+
+{% block content %}
+<h1>{{ request.path }}</h1>
+{% draw_menu 'main_menu' %}
+{% draw_menu 'new_menu' %}
+{% endblock %}

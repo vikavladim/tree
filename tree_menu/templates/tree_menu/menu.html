@@ -1,0 +1,7 @@
+<div class="menu-container" data-menu-name="{{ menu_name }}">
+    <ul class="menu">
+        {% for item in menu_tree %}
+            {% include 'tree_menu/menu_item.html' with item=item %}
+        {% endfor %}
+    </ul>
+</div>
